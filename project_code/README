@@ -7,3 +7,5 @@
 			
 3. load_balancer.py : This is load balancing module run in controller machine.
 			for more information refer thesis report		
+
+4. server_tolerance.py : This module runs on controller machine by task scheduler.
