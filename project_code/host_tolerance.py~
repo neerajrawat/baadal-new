@@ -89,7 +89,7 @@ while True:
 						cpu_usage_high = True
 						channel.basic_publish(exchange='',routing_key='baadal',body=message)
 
-					if is_disk_write_increased(domain_id) and (not cpu_usage_high):
+					if is_disk_write_increased(domain_id):
 						message = message + '10.0.0.5 ' + str(domm['name']) + ' disk_write'
 						print "increases disk writes"
 						channel.basic_publish(exchange='',routing_key='baadal',body=message)
